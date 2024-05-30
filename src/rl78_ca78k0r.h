@@ -1,31 +1,13 @@
-/*****************************************************************************/
-/*ƒtƒ@ƒCƒ‹“à—e	FANSI ‚Æ ƒRƒ“ƒpƒCƒ‰‚Ì·‚ð‹zŽû                               */
-/*‘Î‰žƒ}ƒCƒRƒ“	FRL78ƒVƒŠ[ƒY                                               */
-/*****************************************************************************/
-/*•ÏX—š—ðF                                                                 */
-/*  Ver1_0                                                                   */
-/*        V‹Kì¬ 2015/05/29 •ì                                           */
-/*  Ver1_1                                                                   */
-/*        16i”•\Œ»,CPU§Œä–½—ß,DI/EI–½—ß‚Ì’uŠ·‚ð’Ç‰Á 2015/7/15 •ì        */
-/*  Ver1_2                                                                   */
-/*        ƒ}ƒNƒŒë‹LC³  2015/7/24 •ì                                     */
-/******************************************************************************/
 
-/*****************************************************************************/
-/*  Žg—p•û–@                                                                 */
-/*   Eƒvƒ‰ƒOƒ}Žw—ßŒã‚É–{ƒtƒ@ƒCƒ‹‚ðƒCƒ“ƒNƒ‹[ƒh‚·‚éB                        */
-/*   Emain.c‚ÅDEFINE_SFR_GLOBAL‚ð#defineŽw—ß‚·‚éB                          */
-/*****************************************************************************/
-
-/* “¯ˆêcƒtƒ@ƒCƒ‹“à‚Å‚Ì‘½d’è‹`‚ð–hŽ~‚·‚é */
+/* åŒä¸€cãƒ•ã‚¡ã‚¤ãƒ«å†…ã§ã®å¤šé‡å®šç¾©ã‚’é˜²æ­¢ã™ã‚‹ */
 #ifndef	rl78_ca78k0r_h
 #define	rl78_ca78k0r_h
 
 /*****************************************************************************/
-/*                 SFR•Ï”‚ð’Êí‚Ì•Ï”‚É’uŠ·                                 */
+/*                 SFRå¤‰æ•°ã‚’é€šå¸¸ã®å¤‰æ•°ã«ç½®æ›                                 */
 /*****************************************************************************/
 
-/* Šecƒtƒ@ƒCƒ‹‚Å‚Ì‘½d’è‹`‚ð–hŽ~‚·‚é */
+/* å„cãƒ•ã‚¡ã‚¤ãƒ«ã§ã®å¤šé‡å®šç¾©ã‚’é˜²æ­¢ã™ã‚‹ */
 #if (defined DEFINE_SFR_GLOBAL)&&(!defined __RL78__)
 	#define	SFR_GLOBAL
 #else
@@ -34,7 +16,7 @@
 
 
 /******************************************************************************/
-/*                 Œ^éŒ¾                                                     */
+/*                 åž‹å®£è¨€                                                     */
 /******************************************************************************/
 typedef	unsigned char		SFR_UNSIGNED_CHAR;
 typedef	unsigned int		SFR_UNSIGNED_INT;
@@ -42,7 +24,7 @@ typedef	unsigned short int	SFR_UNSIGNED_SHORT_INT;
 typedef unsigned long int	SFR_UNSIGNED_LONG_INT;
 
 /******************************************************************************/
-/*                 ’Ç‰Á—\–ñŒê‚ÌŒ^‚ðunsigned char‚É’uŠ·                        */
+/*                 è¿½åŠ äºˆç´„èªžã®åž‹ã‚’unsigned charã«ç½®æ›                        */
 /******************************************************************************/
 #ifdef __RL78__
 #else
@@ -52,7 +34,7 @@ typedef unsigned long int	SFR_UNSIGNED_LONG_INT;
 #endif
 
 /******************************************************************************/
-/*                 Šg’£‹@”\‚Ì’Ç‰Á—\–ñŒê‚ð‹ó”’‚É•ÏŠ·                           */
+/*                 æ‹¡å¼µæ©Ÿèƒ½ã®è¿½åŠ äºˆç´„èªžã‚’ç©ºç™½ã«å¤‰æ›                           */
 /******************************************************************************/
 #ifdef __RL78__
 #else
@@ -81,7 +63,7 @@ typedef unsigned long int	SFR_UNSIGNED_LONG_INT;
 
 
 /******************************************************************************/
-/*                 SFR‚ðƒrƒbƒgƒAƒNƒZƒX‚·‚éˆ×‚Ì\‘¢‘Ì                          */
+/*                 SFRã‚’ãƒ“ãƒƒãƒˆã‚¢ã‚¯ã‚»ã‚¹ã™ã‚‹ç‚ºã®æ§‹é€ ä½“                          */
 /******************************************************************************/
 typedef struct	{
 	SFR_UNSIGNED_INT	bit0:1;
@@ -94,7 +76,7 @@ typedef struct	{
 	SFR_UNSIGNED_INT	bit7:1;
 } SFR_BIT8;
 
-/* 150715 write nakagawa 16bitƒAƒNƒZƒX—p\‘¢‘Ì’Ç‰Á */
+/* 150715 write nakagawa 16bitã‚¢ã‚¯ã‚»ã‚¹ç”¨æ§‹é€ ä½“è¿½åŠ  */
 typedef struct	{
 	SFR_UNSIGNED_INT	bit0:1;
 	SFR_UNSIGNED_INT	bit1:1;
@@ -113,11 +95,11 @@ typedef struct	{
 	SFR_UNSIGNED_INT	bit14:1;
 	SFR_UNSIGNED_INT	bit15:1;
 } SFR_BIT16;
-/* 150715 write end nakagawa 16bitƒAƒNƒZƒX—p\‘¢‘Ì’Ç‰Á */
+/* 150715 write end nakagawa 16bitã‚¢ã‚¯ã‚»ã‚¹ç”¨æ§‹é€ ä½“è¿½åŠ  */
 
 
 /******************************************************************************/
-/*                       SFR‚Ì’uŠ·‹K‘¥                                        */
+/*                       SFRã®ç½®æ›è¦å‰‡                                        */
 /******************************************************************************/
 
 /* P0 */
@@ -3203,7 +3185,7 @@ SFR_GLOBAL	SFR_PM5	pmc;
 #endif
 
 /******************************************************************************/
-/*                     2nd SFR‚Ì’uŠ·‹K‘¥                                      */
+/*                     2nd SFRã®ç½®æ›è¦å‰‡                                      */
 /******************************************************************************/
 
 /* ADM2 */
@@ -9729,7 +9711,7 @@ SFR_GLOBAL SFR_UNSIGNED_SHORT_INT glockk;
 	#define	GLOCKK	(glockk)
 #endif
 
-/* CANŽóMƒ‹[ƒ‹“o˜^ƒŒƒWƒXƒ^‚±‚±‚©‚ç*/
+/* CANå—ä¿¡ãƒ«ãƒ¼ãƒ«ç™»éŒ²ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã‹ã‚‰*/
 /* GAFLIDL0L */
 #ifdef __RL78__
 #else
@@ -12611,9 +12593,9 @@ SFR_GLOBAL	SFR_GAFLPH15	gaflph15;
 	#define	GAFLPH15	(gaflph15.ALL)
 #endif
 
-/* CANŽóMƒ‹[ƒ‹“o˜^ƒŒƒWƒXƒ^‚±‚±‚Ü‚Å */
+/* CANå—ä¿¡ãƒ«ãƒ¼ãƒ«ç™»éŒ²ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã¾ã§ */
 
-/* CANŽóMƒoƒbƒtƒ@EƒŒƒWƒXƒ^‚±‚±‚©‚ç */
+/* CANå—ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒ»ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã‹ã‚‰ */
 /* RMIDL0L */
 #ifdef __RL78__
 #else
@@ -16453,9 +16435,9 @@ SFR_GLOBAL	SFR_RMDF315	rmdf315;
 #else
 	#define	RMDF315	(rmdf315.ALL)
 #endif
-/* CANŽóMƒoƒbƒtƒ@EƒŒƒWƒXƒ^‚±‚±‚Ü‚Å */
+/* CANå—ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒ»ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã¾ã§ */
 
-/* CAN—pRAMƒeƒXƒgEƒŒƒWƒXƒ^‚±‚±‚©‚ç */
+/* CANç”¨RAMãƒ†ã‚¹ãƒˆãƒ»ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã‹ã‚‰ */
 /* RPGACC0L */
 #ifdef __RL78__
 #else
@@ -20295,9 +20277,9 @@ SFR_GLOBAL	SFR_RPGACC127	rpgacc127;
 #else
 	#define	RPGACC127	(rpgacc127.ALL)
 #endif
-/* CAN—pRAMƒeƒXƒgEƒŒƒWƒXƒ^‚±‚±‚Ü‚Å */
+/* CANç”¨RAMãƒ†ã‚¹ãƒˆãƒ»ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã¾ã§ */
 
-/* CANŽóMFIFOƒAƒNƒZƒXEƒŒƒWƒXƒ^‚±‚±‚©‚ç */
+/* CANå—ä¿¡FIFOã‚¢ã‚¯ã‚»ã‚¹ãƒ»ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã‹ã‚‰ */
 /* RFIDL0L */
 #ifdef __RL78__
 #else
@@ -20777,9 +20759,9 @@ SFR_GLOBAL	SFR_RFDF31	rfdf31;
 #else
 	#define	RFDF31	(rfdf31.ALL)
 #endif
-/* CANŽóMFIFOƒAƒNƒZƒXEƒŒƒWƒXƒ^‚±‚±‚Ü‚Å */
+/* CANå—ä¿¡FIFOã‚¢ã‚¯ã‚»ã‚¹ãƒ»ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã¾ã§ */
 
-/* CAN0‘—ŽóMFIFOƒAƒNƒZƒXEƒŒƒWƒXƒ^‚±‚±‚©‚ç */
+/* CAN0é€å—ä¿¡FIFOã‚¢ã‚¯ã‚»ã‚¹ãƒ»ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã‹ã‚‰ */
 /* CFIDL0L */
 #ifdef __RL78__
 #else
@@ -21019,9 +21001,9 @@ SFR_GLOBAL	SFR_CFDF30	cfdf30;
 #else
 	#define	CFDF30	(cfdf30.ALL)
 #endif
-/* CAN0‘—ŽóMFIFOƒAƒNƒZƒXEƒŒƒWƒXƒ^‚±‚±‚Ü‚Å */
+/* CAN0é€å—ä¿¡FIFOã‚¢ã‚¯ã‚»ã‚¹ãƒ»ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã¾ã§ */
 
-/* CAN0‘—Mƒoƒbƒtƒ@EƒŒƒWƒXƒ^‚±‚±‚©‚ç */
+/* CAN0é€ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒ»ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã‹ã‚‰ */
 /* TMIDL0L */
 #ifdef __RL78__
 #else
@@ -21861,7 +21843,7 @@ SFR_GLOBAL	SFR_TMDF33	tmdf33;
 #else
 	#define	TMDF33	(tmdf33.ALL)
 #endif
-/* CAN0‘—Mƒoƒbƒtƒ@EƒŒƒWƒXƒ^‚±‚±‚Ü‚Å */
+/* CAN0é€ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒ»ãƒ¬ã‚¸ã‚¹ã‚¿ã“ã“ã¾ã§ */
 
 /* THLACC0L */
 #ifdef __RL78__
@@ -23400,9 +23382,9 @@ SFR_GLOBAL	SFR_ELSELR25	elselr25;
 	#define	ELSELR25	(elselr25.ALL)
 #endif
 
-/* 16i”•\Œ»,CPU§Œä–½—ß,DI/EI–½—ß‚Ì’uŠ·‚ð’Ç‰Á 20150715 kurokawa */
+/* 16é€²æ•°è¡¨ç¾,CPUåˆ¶å¾¡å‘½ä»¤,DI/EIå‘½ä»¤ã®ç½®æ›ã‚’è¿½åŠ  20150715 kurokawa */
 /******************************************************************************/
-/*                       2i•\Œ»‚ð16i•\Œ»‚É•ÏŠ·                              */
+/*                       2é€²è¡¨ç¾ã‚’16é€²è¡¨ç¾ã«å¤‰æ›                              */
 /******************************************************************************/
 
 	/* 1 bit */
@@ -23932,7 +23914,7 @@ SFR_GLOBAL	SFR_ELSELR25	elselr25;
 	#define	b11111111	(0xFF)	/* 255 */
 
 /******************************************************************************/
-/*                       CPU§Œä–½—ß,DI/EI–½—ß‚Ì’uŠ·                          */
+/*                       CPUåˆ¶å¾¡å‘½ä»¤,DI/EIå‘½ä»¤ã®ç½®æ›                          */
 /******************************************************************************/
 #ifdef __RL78__
 #else
@@ -23952,6 +23934,6 @@ SFR_GLOBAL	SFR_ELSELR25	elselr25;
 	#endif
 #endif
 
-/* 16i”•\Œ»,CPU§Œä–½—ß,DI/EI–½—ß‚Ì’uŠ·‚ð’Ç‰Á end 20150715 kurokawa */
+/* 16é€²æ•°è¡¨ç¾,CPUåˆ¶å¾¡å‘½ä»¤,DI/EIå‘½ä»¤ã®ç½®æ›ã‚’è¿½åŠ  end 20150715 kurokawa */
 
 #endif	/* rl78_ca78k0r_h */
