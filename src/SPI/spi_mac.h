@@ -1,13 +1,13 @@
 /*********************************************************************************************************************/
-/*’˜ìŠ—LŒ  F¬“‡ƒvƒŒƒXH‹Æ(Š”) “dŽq‹Zp•” “dŽqÝŒv‰Û                                                              */
-/*ƒe[ƒ}–¼   FSTEP3                                                                             */
-/*ƒ[ƒJ     Fƒ‹ƒlƒTƒXƒGƒŒƒNƒgƒƒjƒNƒX                                                                              */
-/*ƒfƒoƒCƒX   FR5F10PPJ(RL78/F14)                                                                                    */
-/*ƒtƒ@ƒCƒ‹–¼ Fspi_mac.h                                                                                                 */
-/*Žd—l       F”Ä—pƒ}ƒNƒ’è‹`                                                                                        */
+/*è‘—ä½œæ‰€æœ‰æ¨© ï¼š                                                              */
+/*ãƒ†ãƒ¼ãƒžå   ï¼šSTEP3                                                                             */
+/*ãƒ¡ãƒ¼ã‚«     ï¼šãƒ«ãƒã‚µã‚¹ã‚¨ãƒ¬ã‚¯ãƒˆãƒ­ãƒ‹ã‚¯ã‚¹                                                                              */
+/*ãƒ‡ãƒã‚¤ã‚¹   ï¼šR5F10PPJ(RL78/F14)                                                                                    */
+/*ãƒ•ã‚¡ã‚¤ãƒ«å ï¼šspi_mac.h                                                                                                 */
+/*ä»•æ§˜       ï¼šæ±Žç”¨ãƒžã‚¯ãƒ­å®šç¾©                                                                                        */
 /*********************************************************************************************************************/
-/*—š—ð                                                                                                               */
-/* 2024.**.**FV‹Kì¬                                                                                   ƒgƒ‰ƒxƒbƒN */
+/*å±¥æ­´                                                                                                               */
+/* 2024.**.**ï¼šæ–°è¦ä½œæˆ                                                                                   ãƒˆãƒ©ãƒ™ãƒƒã‚¯ */
 /*                                                                                                                   */
 /*                                                                                                                   */
 /*                                                                                                                   */
@@ -23,15 +23,15 @@
 #ifndef spi_mac_h
 #define spi_mac_h
 
-/* ƒV[ƒPƒ“ƒT‚Æ‚ÌUART’ÊM(SAU0Ý’è) */
-#define SET_SPS0L     (0x03u)      /* SAU0,CKm0Žg—p Šî–{ƒNƒƒbƒN24MHz/2^3 */
-#define SET_SMR00     (0x0020u)    /* CKm0‚ð“®ìƒNƒƒbƒN‚ÉŽw’èAƒoƒbƒtƒ@‹ó‚«Š„‚èž‚Ý */
-#define SET_SCR00     (0x8087u)    /* Šï”ƒpƒŠƒeƒBALSBƒtƒ@[ƒXƒgAƒXƒgƒbƒvƒrƒbƒg1bitAƒf[ƒ^’·8bit */
-#define SET_SDR00     (0x4C00u)    /* 24MHz/2^3/(38+1)/2=38461bps 38‚ð[15:9]‚ÉÝ’è */
-#define SET_SOL0L     (0x00u)      /* ³“](’Êí)‘—M */
-#define SET_SO0       (0x0302u)    /* ‰Šúo—ÍƒŒƒxƒ‹‚ð0‚ÉÝ’è */
-#define SET_SOE0L     (0x01u)      /* ƒVƒŠƒAƒ‹’ÊM“®ì‚É‚æ‚éo—Í‹–‰Â */
-#define SET_SS0L      (0x01u)      /* ’ÊM‘Ò‹@ó‘Ô‚É‘JˆÚ */
+/* ã‚·ãƒ¼ã‚±ãƒ³ã‚µã¨ã®UARTé€šä¿¡(SAU0è¨­å®š) */
+#define SET_SPS0L     (0x03u)      /* SAU0,CKm0ä½¿ç”¨ åŸºæœ¬ã‚¯ãƒ­ãƒƒã‚¯24MHz/2^3 */
+#define SET_SMR00     (0x0020u)    /* CKm0ã‚’å‹•ä½œã‚¯ãƒ­ãƒƒã‚¯ã«æŒ‡å®šã€ãƒãƒƒãƒ•ã‚¡ç©ºãå‰²ã‚Šè¾¼ã¿ */
+#define SET_SCR00     (0x8087u)    /* å¥‡æ•°ãƒ‘ãƒªãƒ†ã‚£ã€LSBãƒ•ã‚¡ãƒ¼ã‚¹ãƒˆã€ã‚¹ãƒˆãƒƒãƒ—ãƒ“ãƒƒãƒˆ1bitã€ãƒ‡ãƒ¼ã‚¿é•·8bit */
+#define SET_SDR00     (0x4C00u)    /* 24MHz/2^3/(38+1)/2=38461bps 38ã‚’[15:9]ã«è¨­å®š */
+#define SET_SOL0L     (0x00u)      /* æ­£è»¢(é€šå¸¸)é€ä¿¡ */
+#define SET_SO0       (0x0302u)    /* åˆæœŸå‡ºåŠ›ãƒ¬ãƒ™ãƒ«ã‚’0ã«è¨­å®š */
+#define SET_SOE0L     (0x01u)      /* ã‚·ãƒªã‚¢ãƒ«é€šä¿¡å‹•ä½œã«ã‚ˆã‚‹å‡ºåŠ›è¨±å¯ */
+#define SET_SS0L      (0x01u)      /* é€šä¿¡å¾…æ©ŸçŠ¶æ…‹ã«é·ç§» */
 
 #define _0000_SAU_CK00_FCLK_0                    (0x0000U) /* ck00 - fCLK */
 #define _0001_SAU_CK00_FCLK_1                    (0x0001U) /* ck00 - fCLK/2^1 */
