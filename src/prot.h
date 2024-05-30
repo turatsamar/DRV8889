@@ -1,13 +1,13 @@
 /*********************************************************************************************************************/
-/*’˜ìŠ—LŒ  F¬“‡ƒvƒŒƒXH‹Æ(Š”) “dŽq‹Zp•” “dŽqÝŒv‰Û                                                              */
-/*ƒe[ƒ}–¼   FCXPI RRCNŒü‚¯‹^Ž—•‰‰×ŠJ”­                                                                              */
-/*ƒ[ƒJ     Fƒ‹ƒlƒTƒXƒGƒŒƒNƒgƒƒjƒNƒX                                                                              */
-/*ƒfƒoƒCƒX   FR5F10PPJ(RL78/F14)                                                                                    */
-/*ƒtƒ@ƒCƒ‹–¼ Fprot.h                                                                                                */
-/*Žd—l       FŠÖ”ƒvƒƒgƒ^ƒCƒvéŒ¾ƒtƒ@ƒCƒ‹                                                                          */
+/*è‘—ä½œæ‰€æœ‰æ¨© ï¼š                                                             */
+/*ãƒ†ãƒ¼ãƒžå   ï¼š                                                                             */
+/*ãƒ¡ãƒ¼ã‚«     ï¼šãƒ«ãƒã‚µã‚¹ã‚¨ãƒ¬ã‚¯ãƒˆãƒ­ãƒ‹ã‚¯ã‚¹                                                                              */
+/*ãƒ‡ãƒã‚¤ã‚¹   ï¼šR5F10PPJ(RL78/F14)                                                                                    */
+/*ãƒ•ã‚¡ã‚¤ãƒ«å ï¼šprot.h                                                                                                */
+/*ä»•æ§˜       ï¼šé–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€ãƒ•ã‚¡ã‚¤ãƒ«                                                                          */
 /*********************************************************************************************************************/
-/*—š—ð                                                                                                               */
-/* 2024.**.**FV‹Kì¬                                                                                         ¼ì */
+/*å±¥æ­´                                                                                                               */
+/* 2024.**.**ï¼šæ–°è¦ä½œæˆ                                                                                          */
 /*                                                                                                                   */
 /*                                                                                                                   */
 /*                                                                                                                   */
@@ -22,14 +22,14 @@
 #ifndef rl_prottype
 #define rl_prottype
 
-/* ŠÖ”ƒvƒƒgƒ^ƒCƒvéŒ¾ */
-void ram_error(void);           /* RAMƒ`ƒFƒbƒNŽžƒGƒ‰[”­¶Žž‚Ìˆ— */
-void hdwinit(void);             /* ƒŒƒWƒXƒ^‰ŠúÝ’è */
-void main(void);                /* ƒƒCƒ“ˆ— */
+/* é–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€ */
+void ram_error(void);           /* RAMãƒã‚§ãƒƒã‚¯æ™‚ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿæ™‚ã®å‡¦ç† */
+void hdwinit(void);             /* ãƒ¬ã‚¸ã‚¹ã‚¿åˆæœŸè¨­å®š */
+void main(void);                /* ãƒ¡ã‚¤ãƒ³å‡¦ç† */
 
-Uchar Reg_Port_Set(void);       /* ƒ|[ƒgƒ‚[ƒhƒŒƒWƒXƒ^A“à‘ ƒvƒ‹ƒAƒbƒv’ïR‚ÌÝ’è */
-Uchar Reg_Latch_Set(void);      /* ƒ|[ƒg‚Ìo—Íƒ‰ƒbƒ`‚Ì‰Šú‰»ˆ— */
-Uchar Reg_Func_Set(void);       /* Žü•ÓI/OƒŠƒ_ƒCƒŒƒNƒVƒ‡ƒ“ƒŒƒWƒXƒ^‚ÌÝ’è */
+Uchar Reg_Port_Set(void);       /* ãƒãƒ¼ãƒˆãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿ã€å†…è”µãƒ—ãƒ«ã‚¢ãƒƒãƒ—æŠµæŠ—ã®è¨­å®š */
+Uchar Reg_Latch_Set(void);      /* ãƒãƒ¼ãƒˆã®å‡ºåŠ›ãƒ©ãƒƒãƒã®åˆæœŸåŒ–å‡¦ç† */
+Uchar Reg_Func_Set(void);       /* å‘¨è¾ºI/Oãƒªãƒ€ã‚¤ãƒ¬ã‚¯ã‚·ãƒ§ãƒ³ãƒ¬ã‚¸ã‚¹ã‚¿ã®è¨­å®š */
 
 
 
