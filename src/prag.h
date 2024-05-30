@@ -1,13 +1,13 @@
 /*********************************************************************************************************************/
-/*’˜ìŠ—LŒ  F¬“‡ƒvƒŒƒXH‹Æ(Š”) “dŽq‹Zp•” “dŽqÝŒv‰Û                                                              */
-/*ƒe[ƒ}–¼   FCXPI RRCNŒü‚¯‹^Ž—•‰‰×ŠJ”­                                                                              */
-/*ƒ[ƒJ     Fƒ‹ƒlƒTƒXƒGƒŒƒNƒgƒƒjƒNƒX                                                                              */
-/*ƒfƒoƒCƒX   FR5F10PPJ(RL78/F14)                                                                                    */
-/*ƒtƒ@ƒCƒ‹–¼ Fprag.h                                                                                                */
-/*Žd—l       F”Ä—pƒvƒ‰ƒOƒ}éŒ¾                                                                                      */
+/*è‘—ä½œæ‰€æœ‰æ¨© ï¼šå°å³¶ãƒ—ãƒ¬ã‚¹å·¥æ¥­(æ ª) é›»å­æŠ€è¡“éƒ¨ é›»å­è¨­è¨ˆèª²                                                              */
+/*ãƒ†ãƒ¼ãƒžå   ï¼šCXPI RRCNå‘ã‘ç–‘ä¼¼è² è·é–‹ç™º                                                                              */
+/*ãƒ¡ãƒ¼ã‚«     ï¼šãƒ«ãƒã‚µã‚¹ã‚¨ãƒ¬ã‚¯ãƒˆãƒ­ãƒ‹ã‚¯ã‚¹                                                                              */
+/*ãƒ‡ãƒã‚¤ã‚¹   ï¼šR5F10PPJ(RL78/F14)                                                                                    */
+/*ãƒ•ã‚¡ã‚¤ãƒ«å ï¼šprag.h                                                                                                */
+/*ä»•æ§˜       ï¼šæ±Žç”¨ãƒ—ãƒ©ã‚°ãƒžå®£è¨€                                                                                      */
 /*********************************************************************************************************************/
-/*—š—ð                                                                                                               */
-/* 2024.**.**FV‹Kì¬                                                                                         ¼ì */
+/*å±¥æ­´                                                                                                               */
+/* 2024.**.**ï¼šæ–°è¦ä½œæˆ                                                                                         */
 /*                                                                                                                   */
 /*                                                                                                                   */
 /*                                                                                                                   */
@@ -22,7 +22,7 @@
 #ifndef  rl_pragma
 #define  rl_pragma
 
-/* ”Ä—pƒvƒ‰ƒOƒ}éŒ¾ */
+/* æ±Žç”¨ãƒ—ãƒ©ã‚°ãƒžå®£è¨€ */
 #pragma sfr
 #pragma EI
 #pragma DI
@@ -31,12 +31,12 @@
 #pragma STOP
 
 
-#include "./mac.h"        /* ƒ}ƒNƒ’è‹`ƒtƒ@ƒCƒ‹ */
-#include "./type.h"       /* Œ^’è‹`ƒtƒ@ƒCƒ‹ */
-#include "./glob.h"       /* ƒOƒ[ƒoƒ‹•Ï”éŒ¾ƒtƒ@ƒCƒ‹ */
-#include "./cnst.h"       /* const•Ï”éŒ¾ƒtƒ@ƒCƒ‹ */
-#include "./stat.h"       /* static•Ï”AŠÖ”ƒvƒƒgƒ^ƒCƒvéŒ¾ƒtƒ@ƒCƒ‹ */
-#include "./prot.h"       /* ŠÖ”ƒvƒƒgƒ^ƒCƒvéŒ¾ƒtƒ@ƒCƒ‹ */
+#include "./mac.h"        /* ãƒžã‚¯ãƒ­å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ« */
+#include "./type.h"       /* åž‹å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ« */
+#include "./glob.h"       /* ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°å®£è¨€ãƒ•ã‚¡ã‚¤ãƒ« */
+#include "./cnst.h"       /* constå¤‰æ•°å®£è¨€ãƒ•ã‚¡ã‚¤ãƒ« */
+#include "./stat.h"       /* staticå¤‰æ•°ã€é–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€ãƒ•ã‚¡ã‚¤ãƒ« */
+#include "./prot.h"       /* é–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€ãƒ•ã‚¡ã‚¤ãƒ« */
 
 
 
