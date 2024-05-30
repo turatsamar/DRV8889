@@ -1,13 +1,13 @@
 /*********************************************************************************************************************/
-/*’˜ìŠ—LŒ  F¬“‡ƒvƒŒƒXH‹Æ(Š”) “dŽq‹Zp•” “dŽqÝŒv‰Û                                                              */
-/*ƒe[ƒ}–¼   FSTEP3@@@@@@@@@@                                                                              */
-/*ƒ[ƒJ     Fƒ‹ƒlƒTƒXƒGƒŒƒNƒgƒƒjƒNƒX                                                                              */
-/*ƒfƒoƒCƒX   FR5F10PPJ(RL78/F13)                                                                                    */
-/*ƒtƒ@ƒCƒ‹–¼ Fspi_prag.h                                                                                                */
-/*Žd—l       F”Ä—pƒvƒ‰ƒOƒ}éŒ¾                                                                                      */
+/*è‘—ä½œæ‰€æœ‰æ¨© ï¼š                                                             */
+/*ãƒ†ãƒ¼ãƒžå   ï¼šSTEP3ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€                                                                              */
+/*ãƒ¡ãƒ¼ã‚«     ï¼šãƒ«ãƒã‚µã‚¹ã‚¨ãƒ¬ã‚¯ãƒˆãƒ­ãƒ‹ã‚¯ã‚¹                                                                              */
+/*ãƒ‡ãƒã‚¤ã‚¹   ï¼šR5F10PPJ(RL78/F13)                                                                                    */
+/*ãƒ•ã‚¡ã‚¤ãƒ«å ï¼šspi_prag.h                                                                                                */
+/*ä»•æ§˜       ï¼šæ±Žç”¨ãƒ—ãƒ©ã‚°ãƒžå®£è¨€                                                                                      */
 /*********************************************************************************************************************/
-/*—š—ð                                                                                                               */
-/* 2024.**.**FV‹Kì¬                                                                                   ƒgƒ‰ƒxƒbƒN */
+/*å±¥æ­´                                                                                                               */
+/* 2024.**.**ï¼šæ–°è¦ä½œæˆ                                                                                   ãƒˆãƒ©ãƒ™ãƒƒã‚¯ */
 /*                                                                                                                   */
 /*                                                                                                                   */
 /*                                                                                                                   */
@@ -26,12 +26,12 @@
 #include "../rl78_ca78k0r.h"
 
 
-#include "./spi_mac.h"        /* ƒ}ƒNƒ’è‹`ƒtƒ@ƒCƒ‹ */
-#include "./spi_type.h"       /* Œ^’è‹`ƒtƒ@ƒCƒ‹ */
-#include "./spi_glob.h"       /* ƒOƒ[ƒoƒ‹•Ï”éŒ¾ƒtƒ@ƒCƒ‹ */
-#include "./spi_prot.h"       /* ŠÖ”ƒvƒƒgƒ^ƒCƒvéŒ¾ƒtƒ@ƒCƒ‹ */
-#include "./spi_cnst.h"       /* const•Ï”éŒ¾ƒtƒ@ƒCƒ‹ */
-#include "./spi_stat.h"       /* static•Ï”AŠÖ”ƒvƒƒgƒ^ƒCƒvéŒ¾ƒtƒ@ƒCƒ‹ */
+#include "./spi_mac.h"        /* ãƒžã‚¯ãƒ­å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ« */
+#include "./spi_type.h"       /* åž‹å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ« */
+#include "./spi_glob.h"       /* ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°å®£è¨€ãƒ•ã‚¡ã‚¤ãƒ« */
+#include "./spi_prot.h"       /* é–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€ãƒ•ã‚¡ã‚¤ãƒ« */
+#include "./spi_cnst.h"       /* constå¤‰æ•°å®£è¨€ãƒ•ã‚¡ã‚¤ãƒ« */
+#include "./spi_stat.h"       /* staticå¤‰æ•°ã€é–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€ãƒ•ã‚¡ã‚¤ãƒ« */
 
 
 
