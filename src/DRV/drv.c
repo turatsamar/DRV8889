@@ -95,4 +95,27 @@ void DRV_sleep(void){
 	
 	return chec_fun_set_spi = OK;	
 }
+
+ /*********************************************************************************************************************/
+/*    関数名          :DRV_Calculate_F_Step()                                                                          */
+/*    機能            : DRV8889をSPIモータに設定　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　*/
+/*    引数            : rmp, microstep                                                                             */
+/*    戻り値          : unsigned int                                                                                */
+/*    呼び出し関数名  : main()                                                                                       */
+/*********************************************************************************************************************/
+ Drv_long DRV_Calculate_F_Step(Drv_long input_rpm, Drv_int input_microstep){
+	 
+    Drv_long temp = 0; /*init val */
+    
+    
+    if(input_rpm % 2 != 0){     /* odd number convert to even num*/
+        input_rpm = input_rpm + 1;
+    }else{
+	    ;
+    }
+    temp = (LOOP_COUNT * ((input_rpm * ONE_ROTATION) / input_microstep));  /*while multiplicate ONE_ROT is gone overflow, make rpm data type to Long */
+
+    
+    return temp;
+}
  
