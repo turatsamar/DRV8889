@@ -28,6 +28,7 @@
 
 
 #include "./univ.h"
+#include <math.h> 
 
 /*void Reg_SPI00_Set(void);*/
 
