@@ -184,18 +184,46 @@ void hdwinit(void){
  
 void main(void){
 	
+	 Uint step_number = NG;        			/* ステップ数　変数初期化*/
+	 Drv_long F_step = NG;				/* ステップ周波数　初期化*/
+	 Uchar loop = NG;				/* ループ　初期化*/
+	 Drv_long rpm = NG;
+        
+	 /* F_step(steps/second) =LOOP_COUNT * (v(rpm) * 360('/rot)) / (one_step_angle('/step) * microstep_mode(steps/microstep) *60(s/min));   */
+	 /* 100 hz(F_step) =LOOP_COUNT(for loop) * (300rpm * 360') / (18('/step) * 1(full_steo) * 60(sec/min));   */
+	 
+          
 	
 	
+	 loop = 0x01; 
+	 step_number = 0x3e8;
+	 rpm = 1500;  /* 300 rpm == 1000 pps)*/
+	 F_step = DRV_Calculate_F_Step(rpm, MICROSTEP_1_2);
 		
-	 while(freq)
+	 while(loop)
 	   {	
-		   if(freq == 1)
+		   if(F_step == 0)
 		   {
-			   DRV_one_step(DRV_STEP_FORWARD, DRV_SET_FULLSTEP); /* motor run 1khz or 1 second 1000 step*/
-			   freq = 0x0640;
+			   DRV_one_step(DRV_STEP_BACK, DRV_SET_HALFSTEP); 
+			   F_step = DRV_Calculate_F_Step(rpm, MICROSTEP_1_2);
+			   
+			   /*step_number--;*/
+			   if(step_number == 0)
+			   {				
+				   loop = 0x00;
+				  
+			   }
+			   else{
+				   ;
+			   }
+			   
+			   
+		   }
+		   else{
+			   ;
 		   }
 				
-		freq--;
+		F_step--;
            }
 	
 		
