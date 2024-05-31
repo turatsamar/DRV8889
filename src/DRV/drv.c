@@ -107,15 +107,11 @@ void DRV_sleep(void){
 	 
     Drv_long temp = 0; /*init val */
     
-    
-    if(input_rpm % 2 != 0){     /* odd number convert to even num*/
-        input_rpm = input_rpm + 1;
-    }else{
-	    ;
-    }
-    temp = (LOOP_COUNT * ((input_rpm * ONE_ROTATION) / input_microstep));  /*while multiplicate ONE_ROT is gone overflow, make rpm data type to Long */
 
+	
+	temp = (Drv_long)floor((float)((input_rpm * ONE_ROTATION) / input_microstep)); 
+   	temp *= LOOP_COUNT;  /*while multiplicate ONE_ROT is gone overflow, make rpm data type to Long */   
+ 
     
     return temp;
 }
- 
