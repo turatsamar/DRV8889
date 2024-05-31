@@ -62,7 +62,22 @@
 
 
 
+/*F_Step_Calculat関数用*/
+#define MICROSTEP_1_1 		((Drv_int)0x0438)		/* MICROSTEP_1_1 = (18 * (1/1) * 60) */
+#define MICROSTEP_1_2		((Drv_int)0x021C)		/* MICROSTEP_1_2 = (18 * (1/2) * 60) */
+#define MICROSTEP_1_4		((Drv_int)0x010E)		/* MICROSTEP_1_4 = (18 * (1/4) * 60) */
+#define MICROSTEP_1_6		((Drv_int)0x00B4)		/* MICROSTEP_1_6 = (18 * (1/6) * 60) */
+#define MICROSTEP_1_8		((Drv_int)0x0088)		/* MICROSTEP_1_8 = (18 * (1/8) * 60) */
+#define MICROSTEP_1_16		((Drv_int)0x0044)		/* MICROSTEP_1_16 = (18 * (1/16) * 60) */
+#define MICROSTEP_1_32		((Drv_int)0x0022)		/* MICROSTEP_1_32 = (18 * (1/32) * 60) */
+#define MICROSTEP_1_64		((Drv_int)0x0010)		/* MICROSTEP_1_64 = (18 * (1/64) * 60) */
+#define MICROSTEP_1_128		((Drv_int)0x0008)		/* MICROSTEP_1_128 = (18 * (1/128) * 60) */
+#define MICROSTEP_1_256		((Drv_int)0x0004)		/* MICROSTEP_1_256 = (18 * (1/256) * 60) */
 
+
+#define ONE_ROTATION    	((Drv_int)0x0168)		/*360角度*/
+#define ONESTEP_ANGLE  		((Drv_int)0x12)			/*Nidec stepmotor one step angle is 18*/
+#define LOOP_COUNT		((Drv_int)0x00A0)			/* 160 is  100us */
 
 
 
